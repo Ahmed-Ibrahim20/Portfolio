@@ -66,9 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleMobileMenu() {
     hamburger?.classList.toggle("active");
     navMenu?.classList.toggle("active");
-    document.body.style.overflow = navMenu?.classList.contains("active")
-      ? "hidden"
-      : "auto";
+    document.body.classList.toggle("menu-open");
   }
 
   // Smooth Scroll Navigation
